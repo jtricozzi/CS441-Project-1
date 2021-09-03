@@ -11,6 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+//John Tricozzi
+
 public class MainActivity extends AppCompatActivity {
 
     TextView helloText;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Setting up the app and establishing the text and button
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -29,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onHelloClick(View view){
-
+        //Setting up what happens when the button is pressed
+        //I followed this tutorial https://www.youtube.com/watch?v=9oj4f8721LM&ab_channel=John%27sAndroidStudioTutorials to get the sounds working
 
         final MediaPlayer mySound = MediaPlayer.create(this, R.raw.game_over);
         final Animation animShake = AnimationUtils.loadAnimation(this, R.anim.shake);
